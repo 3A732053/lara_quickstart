@@ -18,21 +18,24 @@ Route::group(['middleware' => 'web'], function () {
     /**
      * 顯示所有任務
      */
-    Route::get('/', function () {
-        //
+    Route::get('/', function ()
+    {
+        return view('tasks');
     });
 
     /**
      * 增加新的任務
      */
-    Route::post('/task', function (Request $request) {
+    Route::post('/task', function (Request $request)
+    {
         //
     });
 
     /**
      * 刪除任務
      */
-    Route::delete('/task/{task}', function (Task $task) {
+    Route::delete('/task/{task}', function (Task $task)
+    {
         //
     });
 });
